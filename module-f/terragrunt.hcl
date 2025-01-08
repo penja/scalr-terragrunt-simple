@@ -1,5 +1,5 @@
 terraform {
-  source = "../main.tf"
+  source = "../base/main.tf"
 }
 
 include {
