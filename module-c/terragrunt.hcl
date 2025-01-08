@@ -3,7 +3,7 @@ terraform {
 }
 
 include {
-  path = find_in_parent_folders("backend/backend.hcl")
+  path = find_in_parent_folders("base/backend.hcl")
 }
 
 
