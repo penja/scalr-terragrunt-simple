@@ -1,9 +1,9 @@
 include {
-    path = find_in_parent_folders("base/backend.hcl")
+    path = find_in_parent_folders("../base/backend.hcl")
 }
 
 terraform {
-  source = "../base/main.tf"
+  source = "../../base/main.tf"
 }
 
 dependency "module-a" {

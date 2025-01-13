@@ -3,7 +3,7 @@ include {
 }
 
 terraform {
-  source = "../base/main.tf"
+  source = "../../base/main.tf"
 }
 
 dependency "module-a" {
