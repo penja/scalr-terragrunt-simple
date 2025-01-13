@@ -6,6 +6,10 @@ terraform {
   source = "../base/main.tf"
 }
 
+dependency "module-a" {
+  config_path = "../../terragrunt-module1/module-a"
+  mock_outputs_allowed_terraform_commands = ["validate", "plan", "init"]
+}
 
 inputs = {
   module_name = "module-b"
