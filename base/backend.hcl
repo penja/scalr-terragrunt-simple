@@ -6,8 +6,8 @@ generate "backend" {
   contents = <<EOF
 terraform {
   backend "s3" {
-    bucket         = "ape-terragrunt-run-all-bucket-7nl7784g"
-    key            = "${path_relative_to_include()}/terraform.tfstate"
+    bucket         = "ape-terragrunt-run-all-bucket-lcy4ldbi"
+    key            = "${basename(get_terragrunt_dir())}/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
     dynamodb_table = "ape-terragrunt-run-all-bucket-locks"
