@@ -46,7 +46,7 @@ resource "random_string" "example" {
   special = false
   upper   = true
   lower   = true
-  number  = true
+  numeric  = true
 }
 
 output "resource_output" {
