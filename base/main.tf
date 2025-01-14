@@ -46,3 +46,15 @@ output "resource_output" {
     resource_id = var.resource_id
   }
 }
+
+output "module_name" {
+  description = "The name of the module"
+  default = "test_module_name"
+  value        = string
+}
+
+output "resource_id" {
+  description = "A unique identifier for the resource"
+  type        = string
+  value = "test_resource_id"
+}
