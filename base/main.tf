@@ -40,6 +40,15 @@ resource "null_resource" "placeholder" {
   }
 }
 
+resource "random_string" "example" {
+  count = 2 
+  length  = 16
+  special = false
+  upper   = true
+  lower   = true
+  number  = true
+}
+
 output "resource_output" {
   value = {
     module_name = var.module_name
@@ -49,10 +58,10 @@ output "resource_output" {
 
 output "module_name" {
   description = "The name of the module"
-  value = "test_module_name"
+  value = random_string.example[0].result
 }
 
 output "resource_id" {
   description = "A unique identifier for the resource"
-  value = "test_resource_id"
+  value = andom_string.example[0].result
 }
