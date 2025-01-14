@@ -63,5 +63,5 @@ output "module_name" {
 
 output "resource_id" {
   description = "A unique identifier for the resource"
-  value = andom_string.example[0].result
+  value = random_string.example[0].result
 }
