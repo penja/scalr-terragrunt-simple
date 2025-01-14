@@ -49,12 +49,10 @@ output "resource_output" {
 
 output "module_name" {
   description = "The name of the module"
-  default = "test_module_name"
-  value        = string
+  value = "test_module_name"
 }
 
 output "resource_id" {
   description = "A unique identifier for the resource"
-  type        = string
   value = "test_resource_id"
 }
