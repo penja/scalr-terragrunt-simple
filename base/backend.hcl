@@ -7,7 +7,7 @@ generate "backend" {
 terraform {
   backend "s3" {
     bucket         = "ape-terragrunt-run-all-bucket-3u6t357f"
-    key            = "state${dirname(get_working_dir())}/terraform.tfstate"
+    key            = "state/${path_relative_to_include()}/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
     dynamodb_table = "ape-terragrunt-run-all-bucket-locks"
