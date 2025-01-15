@@ -15,7 +15,7 @@ dependency "module-a" {
   mock_outputs_allowed_terraform_commands = ["validate", "plan", "init"]
 }
 
-#inputs = {
-#  module_name = dependency.module-a.outputs.module_name
-#  resource_id = dependency.module-a.outputs.resource_id
-#}
+inputs = {
+  module_name = dependency.module-a.outputs.module_name
+  resource_id = dependency.module-a.outputs.resource_id
+}
