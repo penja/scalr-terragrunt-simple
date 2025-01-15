@@ -26,6 +26,10 @@ resource "null_resource" "random_sleep_example_shuf" {
   }
 }
 
+data "external" "env_var" {
+  program = ["bash", "-c", "env"]
+}
+
 
 resource "null_resource" "placeholder" {
   count = 3
