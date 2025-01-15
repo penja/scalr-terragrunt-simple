@@ -1,6 +1,7 @@
 locals {
-  environment = terraform.workspace # Use the Terraform workspace for the environment
+  environment = basename(get_terragrunt_dir())
 }
+
 
 generate "backend" {
   path      = "backend.tf"
