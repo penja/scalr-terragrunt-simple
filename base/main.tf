@@ -26,11 +26,11 @@ resource "null_resource" "random_sleep_example_shuf" {
   }
 }
 
-resource "null_resource" "show_env" {
-  provisioner "local-exec" {
-    command = "env"
-  }
-}
+#resource "null_resource" "show_env" {
+#  provisioner "local-exec" {
+#    command = "env"
+#  }
+#}
 
 
 resource "null_resource" "placeholder" {
