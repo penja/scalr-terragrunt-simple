@@ -12,7 +12,7 @@ dependency "module-a" {
     module_name = "module-b"
     resource_id = "resource-002"
   }
-  #mock_outputs_allowed_terraform_commands = ["validate", "plan", "init", "outputs"]
+  mock_outputs_allowed_terraform_commands = ["validate", "plan", "init"]
 }
 
 inputs = {
