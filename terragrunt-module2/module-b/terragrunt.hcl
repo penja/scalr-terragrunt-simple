@@ -17,6 +17,6 @@ dependency "module-a" {
 }
 
 inputs = {
-  module_name = dependency.module-a.outputs.module_name
-  resource_id = dependency.module-a.outputs.resource_id
+  module_name = "test"
+  resource_id = "res_id"
 }
