@@ -2,6 +2,13 @@ include {
   path = find_in_parent_folders("../base/backend.hcl")
 }
 
+exclude {
+    if = true
+    actions = ["plan"]     # Exclude `plan` and `apply` actions.
+    exclude_dependencies = false    # Do not exclude dependencies.
+}
+
+
 terraform {
   source = "../../base/main.tf"
 }
