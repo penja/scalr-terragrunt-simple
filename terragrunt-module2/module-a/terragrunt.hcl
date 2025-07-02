@@ -4,7 +4,7 @@ include {
 
 exclude {
     if = true
-    actions = ["plan"]     # Exclude `plan` and `apply` actions.
+    actions = ["plan", "apply"]     # Exclude `plan` and `apply` actions.
     exclude_dependencies = false    # Do not exclude dependencies.
 }
 
