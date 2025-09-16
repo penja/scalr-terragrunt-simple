@@ -1,13 +1,13 @@
 variable "module_name" {
   description = "The name of the module"
-  default = "test_module_name"
+  default     = "test_module_name"
   type        = string
 }
 
 variable "resource_id" {
   description = "A unique identifier for the resource"
   type        = string
-  default = "test_resource_id"
+  default     = "test_resource_id"
 }
 
 variable "dependency_info" {
@@ -47,12 +47,12 @@ resource "null_resource" "placeholder" {
 }
 
 resource "random_string" "example" {
-  count = 2 
+  count   = 2
   length  = 16
   special = false
   upper   = true
   lower   = true
-  numeric  = true
+  numeric = true
 }
 
 output "resource_output" {
@@ -64,10 +64,10 @@ output "resource_output" {
 
 output "module_name" {
   description = "The name of the module"
-  value = random_string.example[0].result
+  value       = random_string.example[0].result
 }
 
 output "resource_id" {
   description = "A unique identifier for the resource"
-  value = random_string.example[0].result
+  value       = random_string.example[0].result
 }
