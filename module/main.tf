@@ -16,7 +16,7 @@ provider "aws" {
 
 resource "null_resource" "test" {
   provisioner "local-exec" {
-    command = "sleep 1"  # replace 300 with the number of seconds you want to sleep
+    command = "sleep 1" # replace 300 with the number of seconds you want to sleep
   }
   triggers = {
     always_run = timestamp()
