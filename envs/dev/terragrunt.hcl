@@ -5,4 +5,5 @@ include "root" {
 inputs = {
   bucket_name = "dev-bucket"
   test        = "value"
+  region = "test"
 }
