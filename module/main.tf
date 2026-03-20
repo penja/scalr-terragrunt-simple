@@ -8,6 +8,14 @@ provider "aws" {
   region = var.region
 }
 
+terraform {
+  required_providers {
+    scalr = {
+      source  = "registry.scalr.io/scalr/scalr"
+      version = "3.15.0"
+    }
+  }
+}
 
 variable "webhook_timeout" {
   default = 15
