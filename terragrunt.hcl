@@ -7,11 +7,11 @@ remote_state {
   backend = "s3"
 
   config = {
-    bucket         = "alfiia-terraform-state-bucket"
-    key            = "global/s3/terraform.tfstate"  
-    region         = "us-west-2"
+    bucket         = "ape-terragrunt-run-all-bucket-llkfdprm"
+    key            = "global/ape-terragrunt-run-all-bucket-llkfdprm/terraform.tfstate"  
+    region         = "us-east-1"
     encrypt        = true                          
-    #dynamodb_table = "terraform-locks"     
+    dynamodb_table = "ape-terragrunt-run-all-bucket-locks"     
     disable_bucket_update = true
   }
  
