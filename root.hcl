@@ -1,8 +1,3 @@
-terraform {
-  # Use relative path to refer to the module
-  source = "./module"
-}
-
 generate "backend" {
   path      = "backend.tf"
   if_exists = "overwrite_terragrunt"
